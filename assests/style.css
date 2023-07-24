@@ -20,13 +20,6 @@ body{
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
-.brand-logo{
-    display: flex;
-    align-items: center;
-}
-.brand-logo> img{
-   width: 100%;
-}
 /* nav related styles */
 nav{
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -37,6 +30,14 @@ nav{
     justify-content: space-between;
     padding: 35px 20px 25px 20px;
     background: #FFF;
+}
+.brand-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand-logo> img{
+  max-width:100%;
 }
  .brand-title{
      font-size: 45px;
@@ -101,7 +102,7 @@ nav{
 .banner-content button{
     margin-top: 25px;
     display: inline-flex;
-    padding: 20px 35px;
+    padding: 20px 30px;
     align-items: flex-start;
     gap: 15px;
     border-radius:27px;
@@ -143,7 +144,6 @@ nav{
      display: flex;
      justify-content: center;
      align-items: flex-start;
-     flex-wrap: wrap;
      padding: 20px;
 }   
 .gamer-inner{
@@ -286,16 +286,25 @@ nav{
 .footer-section{
     background-color: #0B0223;
     color: #FFF;
-    padding: 120px 480px;
+    padding: 120px 40px;
     align-items: center;
+}
+.website-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.website-logo >img{
+    max-width:50%;
 }
 .about-gamer > ul{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 .about-gamer li{
     list-style: none;
-    margin-left: 55px;
+    margin-left: 50px;
     font-size: 18px;
     font-weight: 600;
     margin-top: 56px;
@@ -314,11 +323,10 @@ nav{
     margin-left: 20px;
  }
  .icon{
-   font-size: 75px;
+   font-size: 40px;
+   color: white;
  }
- .fa-facebook{
-   color: #1877F2;
- }
+
 #policy{
 color: rgba(255, 255, 255, 0.60);
 font-size: 14px;
@@ -338,7 +346,7 @@ font-weight: 500;
 /* responsive styles */
 /* mobile device styles */
 @media screen and (max-width:576px) {
-    .nav-wraper, .navbar-menu> ul{
+    .nav-wraper, .navbar-menu> ul, .gamer-content{
          flex-direction: column;
     } 
     .navbar-menu li{
@@ -347,8 +355,17 @@ font-weight: 500;
     .banner-wraper{
         flex-direction: column-reverse;
     }
-    .banner-img{
-        width: 100%;
+    .banner-img, .gamer-inner{
+        width:100%
+    }
+    .banner-content{
+        padding: 20px;
+    }
+    .section-details{
+        font-size: 15px;
+    }
+    .benefit-inner{
+        text-align: center;
         padding: 10px;
     }
 }
