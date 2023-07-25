@@ -403,3 +403,31 @@ font-weight: 500;
         gap: 30px;
      }
 }
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:960px) {
+     .benefit{
+         flex-direction: column;
+     }
+     .benefit-inner{
+        margin: 40px 0 60px 0;
+        width: 70%;
+     }
+     .first-featured,.second-featured{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+}
+  .second-featured{
+    margin-top: 30px;
+    padding: 0;
+  }
+  .about-gamer> ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ }
+   #policy>ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+}
